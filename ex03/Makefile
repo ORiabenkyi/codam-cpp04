@@ -7,6 +7,8 @@ SRCS = 	src/main.cpp \
 		src/AMateria.cpp \
 		src/Ice.cpp \
 		src/Cure.cpp \
+		src/Fire.cpp \
+		src/Air.cpp \
 		src/Character.cpp \
 		src/MateriaSource.cpp
 		src/ICharacter.cpp \
@@ -15,6 +17,8 @@ SRCS = 	src/main.cpp \
 HEADS =  inc/AMateria.hpp \
 		 inc/Ice.hpp \
 		 inc/Cure.hpp \
+		 inc/Fire.hpp \
+		 inc/Air.hpp \
 		 inc/Character.hpp \
 		 inc/MateriaSource.hpp
 		 inc/ICharacter.hpp \
