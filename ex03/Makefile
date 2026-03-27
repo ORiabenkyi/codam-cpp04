@@ -10,9 +10,10 @@ SRCS = 	src/main.cpp \
 		src/Fire.cpp \
 		src/Air.cpp \
 		src/Character.cpp \
-		src/MateriaSource.cpp
+		src/MateriaSource.cpp \
 		src/ICharacter.cpp \
-		src/IMateriaSource.cpp
+		src/IMateriaSource.cpp \
+		src/Environment.cpp
 
 HEADS =  inc/AMateria.hpp \
 		 inc/Ice.hpp \
@@ -20,9 +21,10 @@ HEADS =  inc/AMateria.hpp \
 		 inc/Fire.hpp \
 		 inc/Air.hpp \
 		 inc/Character.hpp \
-		 inc/MateriaSource.hpp
+		 inc/MateriaSource.hpp \
 		 inc/ICharacter.hpp \
-		 inc/IMateriaSource.hpp
+		 inc/IMateriaSource.hpp \
+		 inc/Environment.hpp
 
 OBJS = $(SRCS:.cpp=.o)
 

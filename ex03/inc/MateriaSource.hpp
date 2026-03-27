@@ -1,4 +1,7 @@
-#include "../inc/IMateriaSource.hpp"
+#ifndef MATERIASOURCE_HPP
+#define MATERIASOURCE_HPP
+
+#include "IMateriaSource.hpp"
 
 class MateriaSource : public IMateriaSource
 {
@@ -9,11 +12,12 @@ class MateriaSource : public IMateriaSource
     public:
         MateriaSource();
         MateriaSource(const MateriaSource &other);
-        MateriaSource& operator=(const MateriaSource &other) ;
+        MateriaSource& operator=(const MateriaSource &other);
 
     public:
-        virtual ~MateriaSource() {}
-        virtual void learnMateria(AMateria*) override;
-        virtual AMateria* createMateria(std::string const & type) override;
+        virtual ~MateriaSource();
+        virtual void learnMateria(AMateria*);
+        virtual AMateria* createMateria(std::string const & type);
 };
 
+#endif

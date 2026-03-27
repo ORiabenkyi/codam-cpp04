@@ -1,4 +1,8 @@
 #include "../inc/ICharacter.hpp"
+#include "../inc/AMateria.hpp"
+#include <iostream>
+
+
 
 ICharacter::~ICharacter()
 {
@@ -11,7 +15,7 @@ ICharacter::ICharacter()
 {
     for (int i = 0; i < INVENTORY_SIZE; ++i)
     {
-        inventory[i] = nullptr;
+        inventory[i] = NULL;
     }
     #if DEBUG
     std::cout << "ICharacter default constructor called" << std::endl;
@@ -26,7 +30,7 @@ ICharacter::ICharacter(const ICharacter &other)
         if (other.inventory[i])
             inventory[i] = other.inventory[i]->clone();
         else
-            inventory[i] = nullptr;
+            inventory[i] = NULL;
     }
     #if DEBUG
     std::cout << "ICharacter copy constructor called" << std::endl;
@@ -47,7 +51,7 @@ ICharacter& ICharacter::operator=(const ICharacter &other)
             if (other.inventory[i])
                 inventory[i] = other.inventory[i]->clone();
             else
-                inventory[i] = nullptr;
+                inventory[i] = NULL;
         }
     }
     return *this;
